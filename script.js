@@ -24,3 +24,14 @@ menuIcon.onclick=()=>{
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 }
+
+// Form submission handling
+document.querySelector('form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent the default form submission
+
+    // Show alert
+    alert('Your response has been submitted');
+
+    // Reset the form fields
+    this.reset();
+});
